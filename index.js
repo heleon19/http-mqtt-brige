@@ -4,10 +4,10 @@ const bodyParser = require("body-parser");
 
 function HttpMqttBridge() {
 
-    const host = process.env.MQTT_HOST || "mqtt://192.168.2.30";
+    const host = process.env.MQTT_HOST || "mqtt://127.0.0.1";
     const port = process.env.MQTT_PORT || "1883";
-    const username = process.env.MQTT_USERNAME || "admin";
-    const password = process.env.MQTT_PASSWORD || "ottag2022";
+    const username = process.env.MQTT_USERNAME || "";
+    const password = process.env.MQTT_PASSWORD || "";
     const clientId = process.env.MQTT_CLIENT_ID || `http-bridge_${Math.random().toString(16).substr(2, 8)}`;
     const httpPort = process.env.HTTP_PORT || "5000";
 
