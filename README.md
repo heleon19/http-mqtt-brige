@@ -25,7 +25,7 @@ docker run -d \
     -e MQTT_HOST=mqtt://<mqtt-host> \
     -e MQTT_USERNAME=<username> \
     -e MQTT_PASSWORD=<password> \
-    migoller/http-mqtt-bridge
+    heleon19/http-mqtt-bridge
 ```
 
 ## Publish to a topic
